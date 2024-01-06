@@ -1,3 +1,6 @@
+// products.js
+
+const adminData = require('../routes/admin');
 const products = [];
 
 exports.getAddProduct = (req, res, next) => {
@@ -16,7 +19,6 @@ exports.postAddProducts = (req, res, next) => {
 };
 
 exports.getProduct = (req, res, next) => {
-    const products = adminData.products;
     res.render('shop', {
       prods: products,
       pageTitle: 'Shop',
@@ -25,4 +27,4 @@ exports.getProduct = (req, res, next) => {
       activeShop: true,
       productCSS: true
     });
-};
+  };

@@ -1,9 +1,10 @@
+// admin.js (routes)
+
 const path = require('path');
 
 const express = require('express');
-
-const productsCtrl = require('../controllers/products');
 const router = express.Router();
+const productsCtrl = require('../controllers/products');
 
 
 // /admin/add-product => GET
